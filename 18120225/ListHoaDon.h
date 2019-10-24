@@ -12,5 +12,7 @@ public:
 	void printList();
 	void printList(vector<int>);//only print at vector
 	int getPrice();
+	HoaDon& operator[](int);
+	void removeBookAt(int);
 };
 
