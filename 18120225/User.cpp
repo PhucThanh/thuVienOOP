@@ -16,7 +16,7 @@ User::User(string name, int age, string pass)
 {
 	this->name = name;
 	this->age = age;
-	this->pass = pass;
+	this->password = pass;
 	loginStatus = false;
 }
 bool User::getLoginStatus()
@@ -33,7 +33,7 @@ bool User::login()
 	cin >> name;
 	cout << "> Password :";
 	cin >> pass;
-	if( (this->name==name)&&(this->pass==pass))
+	if( (this->name==name)&&(this->password==pass))
 	{
 		//cout << "Login success" << endl;
 		loginStatus = true;
@@ -53,7 +53,7 @@ void User::addHoaDon(HoaDon h)
 {
 	dsHoaDon.addLast(h);
 }
-void User::inHoaDon()
+void User::printHoaDon()
 {
 	dsHoaDon.printList();
 }
@@ -63,5 +63,5 @@ HoaDon& User::operator[](int i)
 }
 void User::removeBookAt(int i)
 {
-	dsHoaDon.removeBookAt(i);
+	dsHoaDon.removeBook(i);
 }

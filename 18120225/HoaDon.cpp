@@ -4,13 +4,12 @@
 #include <iomanip>
 HoaDon::HoaDon()
 {
-	price = 0;
 	count = 0;
 }
 HoaDon::~HoaDon()
 {
 }
-int HoaDon::getPrice() { return price; }
+int HoaDon::getPrice() { return book.getPrice()*count; }
 int HoaDon::getCount() { return count; }
 
 void HoaDon::print()
@@ -24,7 +23,6 @@ void HoaDon::print()
 void HoaDon::setCount(int c) 
 {
 	count = c;
-	price = book.getPrice() * count;
 }
 HoaDon& HoaDon::operator=(Book b) 
 {

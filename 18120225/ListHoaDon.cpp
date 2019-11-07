@@ -21,7 +21,7 @@ void ListHoaDon::printList()
 	{
 		hoaDon[i].print();
 	}
-	cout << setw(60) << "Total : " << this->getPrice()<<endl;
+	cout << setw(60) << "Total : " << this->getTotalPrice()<<endl;
 }
 void ListHoaDon::printList(vector<int> p) 
 {
@@ -33,9 +33,9 @@ void ListHoaDon::printList(vector<int> p)
 	{
 		hoaDon[p[i]].print();
 	}
-	cout << setw(60) << "Total : " << this->getPrice();
+	cout << setw(60) << "Total : " << this->getTotalPrice();
 }
-int ListHoaDon::getPrice() 
+int ListHoaDon::getTotalPrice() 
 {
 	int sum=0;
 	for (int i = 0;i < hoaDon.size();i++)
@@ -48,7 +48,7 @@ HoaDon& ListHoaDon::operator[](int i)
 {
 	return hoaDon[i];
 }
-void ListHoaDon::removeBookAt(int i)
+void ListHoaDon::removeBook(int i)
 {
 	hoaDon.erase(hoaDon.begin()+ i);
 }

@@ -11,8 +11,8 @@ public:
 	void addLast(HoaDon);
 	void printList();
 	void printList(vector<int>);//only print at vector
-	int getPrice();
+	int getTotalPrice();
 	HoaDon& operator[](int);
-	void removeBookAt(int);
+	void removeBook(int);
 };
 

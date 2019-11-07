@@ -15,7 +15,7 @@ Book::Book(string name = "", string id = "", int price = -1, int count = 1) {
 }
 Book::~Book()
 {
-	price = -1;
+	
 }
 Book::Book(const Book& b)
 {
@@ -33,6 +33,7 @@ string Book::getIsbn() {
 int Book::getPrice() {
 	return price;
 }
+/*
 void Book::set() {
 	cin.ignore();
 	cout << "Name :";
@@ -43,6 +44,7 @@ void Book::set() {
 	cin >> price;
 	cout << "----------" << endl;
 }
+*/
 void Book::setName(string& str) {
 	name = str;
 }
@@ -102,4 +104,17 @@ void Book::bookSetting()
 		cin >> input;
 		this->setPrice(input);
 	}
+}
+
+istream& operator>>(istream& is, Book& b) 
+{
+	is.ignore();
+	cout << "Name :";
+	getline(is, b.name, '\n');
+	cout << "Id :";
+	is >> b.isbn;
+	cout << "Price :";
+	is >> b.price;
+	cout << "----------" << endl;
+	return is;
 }

@@ -52,18 +52,19 @@ int main() {
 				if (user.getLoginStatus())
 				{
 					HoaDon hd;
-					hd = bl.getBookAt(bookPos);
+					//hd = bl.getBookAt(bookPos);
+					hd = bl[bookPos];
 					cout << "> Chon so luong muon mua :";
 					int count;
 					cin >> count;
 					hd.setCount(count);
 					user.addHoaDon(hd);
-					user.inHoaDon();
+					user.printHoaDon();
 				}
 			}
 		}else if((input==2) && (user.getLoginStatus()))
 		{
-			user.inHoaDon();
+			user.printHoaDon();
 			cout << "> 1. Thay doi so luong" << endl;
 			cout << "> 2. Xoa hoa don" << endl;
 			cin >> input;
@@ -89,10 +90,10 @@ int main() {
 					user.removeBookAt(pos);
 				}
 			}
-			user.inHoaDon();
+			user.printHoaDon();
 		}
 	} while (input != 0);
 
-	user.inHoaDon();
+	user.printHoaDon();
 	return 0;
 }

@@ -4,7 +4,6 @@
 class HoaDon
 {
 	Book book;
-	int price;
 	int count;
 public:
 	HoaDon();

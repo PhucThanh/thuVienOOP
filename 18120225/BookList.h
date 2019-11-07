@@ -11,18 +11,19 @@ public:
 	~BookList();
 	void input();
 	//get
-	int getBookCount();
+	int size();
 	void addLast(Book);
-	void removeLast();
 	void printList();
 	void printList(vector<int>);
-	bool operator==(BookList);
 
-	Book getBookAt(int);
+	Book& operator[](int);
+
 	vector<int> findBookByIsbn(string);
 	vector<int> findBookByName(string);	//Neu bi trung se bat buoc find by isbn
-	int findBook();	//Tra ve duy nhat vi tri tim dc
-	void deleteBook(int);
+	int findBook();	//Tra ve duy nhat vi tri tim dc. -1 neu khong co
+	void removeBook(int);
 	void bookSetting(int);
+
+	bool operator==(BookList);
 };
 

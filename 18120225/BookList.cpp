@@ -7,7 +7,7 @@ BookList::BookList()
 BookList::~BookList()
 {
 }
-int BookList::getBookCount() {
+int BookList::size() {
 	return book.size();
 }
 void BookList::addLast(Book b) {
@@ -20,7 +20,7 @@ void BookList::input() {
 	for (int i = 0; i < n; i++)
 	{
 		Book b;
-		b.set();
+		cin >> b;
 		this->addLast(b);
 	}
 }
@@ -64,10 +64,9 @@ bool BookList::operator==(BookList b) {
 	}
 	return false;
 }
-void BookList::removeLast() {
-	book.pop_back();
-}
-Book BookList::getBookAt(int n) {
+
+Book& BookList::operator[](int n) 
+{
 	return this->book[n];
 }
 vector<int> BookList::findBookByIsbn(string id) {
@@ -91,7 +90,7 @@ vector<int> BookList::findBookByName(string s)
 	}
 	return pos;
 }
-void BookList::deleteBook(int i)
+void BookList::removeBook(int i)
 {
 	if(book.size() >i)
 	{
@@ -108,7 +107,7 @@ void BookList::bookSetting(int i)
 	cin >> n;
 	if (n == 1) 
 	{
-		deleteBook(i);
+		removeBook(i);
 	}
 	else 
 	{

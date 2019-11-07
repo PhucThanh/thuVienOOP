@@ -7,8 +7,10 @@ using namespace std;
 class User
 {
 	string name;
+	string userName;
 	int age;
-	string pass;
+
+	string password;
 	ListHoaDon dsHoaDon;
 	bool loginStatus;
 public:
@@ -17,7 +19,7 @@ public:
 	User(string name, int age, string pass);
 	~User();
 	void addHoaDon(HoaDon);
-	void inHoaDon();
+	void printHoaDon();
 	bool getLoginStatus();
 	int getHoaDonSize();
 	HoaDon& operator[](int);
