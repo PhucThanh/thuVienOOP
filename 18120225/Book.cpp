@@ -108,7 +108,7 @@ void Book::bookSetting()
 
 istream& operator>>(istream& is, Book& b) 
 {
-	is.ignore();
+	//is.ignore();
 	cout << "Name :";
 	getline(is, b.name, '\n');
 	cout << "Id :";

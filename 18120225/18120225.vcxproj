@@ -129,6 +129,7 @@
     <ClInclude Include="HoaDon.h" />
     <ClInclude Include="ListHoaDon.h" />
     <ClInclude Include="NXB.h" />
+    <ClInclude Include="TacGia.h" />
     <ClInclude Include="UI.h" />
     <ClInclude Include="User.h" />
   </ItemGroup>
@@ -140,6 +141,7 @@
     <ClCompile Include="ListHoaDon.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NXB.cpp" />
+    <ClCompile Include="TacGia.cpp" />
     <ClCompile Include="UI.cpp" />
     <ClCompile Include="User.cpp" />
   </ItemGroup>

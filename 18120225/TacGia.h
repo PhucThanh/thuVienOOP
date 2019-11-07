@@ -1,18 +1,20 @@
 #pragma once
-#include <string>
-#include "BookList.h"
+#include<string>
+#include"BookList.h"
 using namespace std;
-class NXB
+class TacGia
 {
 	string name;
 	string pass;
 	BookList list;
 public:
-	NXB();
-	NXB(string, string);
-	~NXB();
+	TacGia();
+	TacGia(string, string);
+	~TacGia();
+
 	void addBook();
 	void addBookToList(Book);
 	void removeBook(int);
 	void editBook(int);
 };
+
