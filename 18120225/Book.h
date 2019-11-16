@@ -1,4 +1,7 @@
 #pragma once
+#ifndef _BOOK_H_
+#define _BOOK_H_
+#endif // !_NXB_H_
 #include<string>
 #include "UI.h"
 using namespace std;
@@ -8,6 +11,8 @@ class Book
 	string isbn;
 	int price;
 	int count;
+	string nxb;
+	string author;
 public:
 	//Constructor
 	Book();
@@ -20,13 +25,15 @@ public:
 	string getIsbn();
 	int getPrice();
 	int getCount();
+	
 	//Set method
-	//void set();
 	void setName(string&);
 	void setIsbn(string&);
+	void setNxb(string&);
+	void setAuthor(string&);
 	void setPrice(int&);
 	void setCount(int);
-
+	//void setNXB(NXB);
 	void printBook();
 
 	bool operator==(Book);

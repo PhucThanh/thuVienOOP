@@ -123,10 +123,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Author.h" />
     <ClInclude Include="Book.h" />
     <ClInclude Include="BookList.h" />
-    <ClInclude Include="Guest.h" />
     <ClInclude Include="HoaDon.h" />
+    <ClInclude Include="Lib.h" />
+    <ClInclude Include="Library.h" />
     <ClInclude Include="ListHoaDon.h" />
     <ClInclude Include="NXB.h" />
     <ClInclude Include="TacGia.h" />
@@ -134,10 +136,12 @@
     <ClInclude Include="User.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Author.cpp" />
     <ClCompile Include="Book.cpp" />
     <ClCompile Include="BookList.cpp" />
-    <ClCompile Include="Guest.cpp" />
     <ClCompile Include="HoaDon.cpp" />
+    <ClCompile Include="Lib.cpp" />
+    <ClCompile Include="Library.cpp" />
     <ClCompile Include="ListHoaDon.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="NXB.cpp" />

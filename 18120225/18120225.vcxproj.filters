@@ -36,10 +36,16 @@
     <ClInclude Include="NXB.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Guest.h">
+    <ClInclude Include="TacGia.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="TacGia.h">
+    <ClInclude Include="Library.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Lib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Author.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -68,10 +74,16 @@
     <ClCompile Include="NXB.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="Guest.cpp">
+    <ClCompile Include="TacGia.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="TacGia.cpp">
+    <ClCompile Include="Library.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Lib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Author.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

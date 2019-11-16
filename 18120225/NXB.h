@@ -1,18 +1,19 @@
 #pragma once
+#ifndef _NXB_H_
+#define _NXB_H_
+#endif // !_NXB_H_
+
 #include <string>
+#include "User.h"
 #include "BookList.h"
 using namespace std;
-class NXB
+class NXB : public User
 {
-	string name;
-	string pass;
-	BookList list;
+	vector<Book*> bookList;
 public:
 	NXB();
-	NXB(string, string);
+	NXB(string, string, string);
 	~NXB();
-	void addBook();
-	void addBookToList(Book);
-	void removeBook(int);
-	void editBook(int);
+	string getRole() { return "NXB"; };
+	Book createNewBook();
 };

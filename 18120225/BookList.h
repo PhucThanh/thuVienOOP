@@ -1,18 +1,18 @@
 #pragma once
 #include <vector>
 #include "Book.h"
-#include "UI.h"
 class BookList
 {
-	vector<Book> book;
+	
 public:
+	vector<Book> book;
 	//constructor
 	BookList();
 	~BookList();
 	void input();
 	//get
 	int size();
-	void addLast(Book);
+	void addLast(Book&);
 	void printList();
 	void printList(vector<int>);
 

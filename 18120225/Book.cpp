@@ -6,6 +6,8 @@ Book::Book()
 	isbn = "0";
 	price = -1;
 	count = 1;
+	nxb = "no publisher";
+	author = "no author";
 }
 Book::Book(string name = "", string id = "", int price = -1, int count = 1) {
 	this->name = name;
@@ -33,18 +35,14 @@ string Book::getIsbn() {
 int Book::getPrice() {
 	return price;
 }
-/*
-void Book::set() {
-	cin.ignore();
-	cout << "Name :";
-	getline(cin,name,'\n');
-	cout << "Id :";
-	cin >> isbn;
-	cout << "Price :";
-	cin >> price;
-	cout << "----------" << endl;
+void Book::setNxb(string& s) 
+{
+	nxb = s;
 }
-*/
+void Book::setAuthor(string& s) 
+{
+	author = s;
+}
 void Book::setName(string& str) {
 	name = str;
 }

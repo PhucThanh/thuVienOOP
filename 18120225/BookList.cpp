@@ -10,7 +10,7 @@ BookList::~BookList()
 int BookList::size() {
 	return book.size();
 }
-void BookList::addLast(Book b) {
+void BookList::addLast(Book &b) {
 	book.push_back(b);
 }
 void BookList::input() {
